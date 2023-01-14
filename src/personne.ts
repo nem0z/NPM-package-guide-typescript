@@ -1,5 +1,5 @@
-import { Contry } from "./contry";
-import type { Personne } from './types';
+import { Contry } from "./contry.js";
+import type { Personne } from './types.js';
 
 const me: Personne = {
     Name: "Maxime",

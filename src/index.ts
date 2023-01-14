@@ -1,3 +1,5 @@
-export { Contry } from './contry';
-export type { Personne } from './types';
-export default './personne';
+export { Contry } from './contry.js';
+export type { Personne } from './types.js';
+
+import Display from './personne.js';
+export default Display;
