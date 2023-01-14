@@ -12,6 +12,7 @@
     "scripts": {
         "build": "tsc"
     },
+    
     "devDependencies": {
         "@types/node": "^18.11.18",
         "tsc": "^2.0.4",
