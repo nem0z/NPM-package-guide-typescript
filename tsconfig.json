@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "module": "esnext",
+      "module": "node16",
       "target": "esnext",
       "noImplicitAny": true,
       "removeComments": true,
@@ -8,8 +8,10 @@
       "outDir": "./dist",
       "rootDir": "./src",
       "declaration": true,
-      "declarationMap": true
+      "declarationMap": true,
+      "moduleResolution": "node16"
     },
+
     "include": [
       "src/**/*"
     ],
