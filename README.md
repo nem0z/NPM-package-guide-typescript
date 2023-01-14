@@ -1,4 +1,4 @@
-### How to setup an NPM package ?
+# How to setup an NPM package ?
 
 - Build with TypeScript
 - Using ES Moudles (but also compatible with CommonJS)
@@ -12,12 +12,12 @@
 ```shell
     $ yarn init
 ```
-Then filled and the fields (you can use default values for instance)
+Then fill all fields (you can use default values for instance)
 
 ## Install dependencies for `typescript` 
 
 ```shell
-    yarn add -D typescript tsc @types/node
+    $ yarn add -D typescript tsc @types/node
 ```
 
 ## 3/ Add `tsconfig.json`
@@ -34,7 +34,7 @@ Then filled and the fields (you can use default values for instance)
             "rootDir": "./src",             // Folder with source files
             "declaration": true,            // Create .d.ts files for 'types'
             "declarationMap": true,         // 
-            "moduleResolution": "node16",   // !important if you want to be able to use JS out with ES     modules
+            "moduleResolution": "node16",   // !important if you want to be able to use JS out with ES modules
         },
 
         "include": [
@@ -48,7 +48,7 @@ Then filled and the fields (you can use default values for instance)
 
 ## 4/ Edit the `package.json`
 
-# Config package entries and type
+### Config package entries and type
 
 ```json
     ...
@@ -58,7 +58,7 @@ Then filled and the fields (you can use default values for instance)
     ...
 ```
 
-# Add build script
+### Add build script
 
 ```json
     "scripts": {
@@ -70,7 +70,7 @@ Then filled and the fields (you can use default values for instance)
 
 /!\ It's importante to add the `.npmignore` event if you leave it empty as we will ignore the `dist/`folder in the github repo but we want to include it in the `NPM Package. In a way the `.npmignore` will overwrite the `.gitignore` for `npm`. /!\
 
-# `.gitingore`
+### `.gitingore`
 
 ```
     node_modules/
@@ -78,9 +78,11 @@ Then filled and the fields (you can use default values for instance)
     yarn.lock
 ```
 
-# `.npmignore``
+### `.npmignore`
 
-```json
-    yarn.lock
-    src/        // If you don't want to publish the source files on npm
 ```
+    yarn.lock
+    src/
+```
+
+Add the `src/`folder if you don't want to publish the source files on npm
