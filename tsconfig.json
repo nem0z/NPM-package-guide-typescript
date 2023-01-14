@@ -9,7 +9,15 @@
       "rootDir": "./src",
       "declaration": true,
       "declarationMap": true,
-      "moduleResolution": "node16"
+      "moduleResolution": "node16",
+      "baseUrl": "./dist",
+
+      "paths": {
+        "./types/esm": ["types/esm/index.d.ts"],
+        "./types/commonjs": ["types/commonjs/index.d.ts"],
+        "./esm": ["esm/index.js"],
+        "./commonjs": ["commonjs/index.cjs"]
+      }
     },
 
     "include": [
